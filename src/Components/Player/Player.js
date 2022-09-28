@@ -11,7 +11,8 @@ const Player = () => {
         .then(data=>setProduct(data))
     },[])
     return (
-        <div className='player-container'>
+        <div>
+            <div className='player-container'>
             <div className='Player'>
              {
                 products.map(product =><Product
@@ -22,6 +23,7 @@ const Player = () => {
             </div>
             <div className='cart'>
               <h1>CART</h1>
+            </div>
             </div>
         </div>
     );

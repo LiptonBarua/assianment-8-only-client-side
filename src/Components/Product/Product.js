@@ -5,8 +5,9 @@ const Product = (props) => {
     return (
         <div className='product-container'>
            <img src={img} alt="" />
-            <h3>{name}</h3>
-            <p></p>
+            <h3>Sports: {name}</h3>
+            <p>For Age: {For_Age}</p>
+            <p>Time required: {Time_required}s</p>
         </div>
     );
 };
