@@ -10,14 +10,19 @@ const Player = () => {
         .then(res=>res.json())
         .then(data=>setProduct(data))
     },[])
+
+    const handleAddtoaCart =()=>{
+     console.log("bangladesh");
+    }
     return (
-        <div>
+           
             <div className='player-container'>
             <div className='Player'>
              {
                 products.map(product =><Product
                 key={product.id}
                 product ={product}
+                handleAddtoaCart={handleAddtoaCart}
                 ></Product>)
              }
             </div>
@@ -25,7 +30,6 @@ const Player = () => {
               <h1>CART</h1>
             </div>
             </div>
-        </div>
     );
 };
 

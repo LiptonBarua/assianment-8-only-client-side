@@ -1,10 +1,13 @@
 .player-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    padding: 0 80px;
 }
 .Player{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
+    padding: 0 20px 0 80px;
+}
+.cart{
+    background-color: orange;
 }
