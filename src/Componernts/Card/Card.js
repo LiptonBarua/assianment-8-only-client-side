@@ -11,6 +11,7 @@ const Card = (props) => {
     const [result, setResult] = useState([])
     const handleClick =(id)=>{
       setResult(result.concat(id.target.name))
+      localStorage.setItem(id, 1)
     }
 
 
