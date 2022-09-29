@@ -1,0 +1,17 @@
+.card{
+    width: 236px;
+    position: relative;
+    padding: 5px;
+}
+.card img{
+    width: 224px;
+    height: 168px;
+}
+.btn-cart{
+    bottom: 0;
+    background-color: green;
+    color: white;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+}
