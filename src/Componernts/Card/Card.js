@@ -9,8 +9,8 @@ const Card = (props) => {
     }
     
     const [result, setResult] = useState([])
-    const handleClick =(e)=>{
-      setResult(result.concat(e.target.name))
+    const handleClick =(id)=>{
+      setResult(result.concat(id.target.name))
     }
 
 
@@ -34,6 +34,7 @@ const Card = (props) => {
    </div>
   
   <div>
+     <h2>Add a Break</h2>
     <button className='buttonCard' name='10' onClick={handleClick}>10</button>
     <button className='buttonCard' name='20' onClick={handleClick}>20</button>
     <button className='buttonCard' name='30' onClick={handleClick}>30</button>
