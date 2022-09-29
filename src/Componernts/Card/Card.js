@@ -11,7 +11,7 @@ const Card = (props) => {
     const [result, setResult] = useState([])
     const handleClick =(id)=>{
       setResult(result.concat(id.target.name))
-      localStorage.setItem(id, 1)
+
     }
 
 
@@ -56,7 +56,7 @@ const Card = (props) => {
            </div>
 
           <div className='text-center'>
-          <button className='question text-white py-3 my-5'>Activity Completed</button>
+          <button className='question1 text-white py-3 my-5'>Activity Completed</button>
           </div>
 
           <div className='text-center py-3 my-3'>

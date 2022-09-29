@@ -18,3 +18,11 @@
     font-size: 24px;
     padding: 10px 139px;
 }
+
+.question1 {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    padding: 10px 139px;
+}
