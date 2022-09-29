@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Card.css'
 const Card = (props) => {
     const{cart}=props;
@@ -8,17 +8,30 @@ const Card = (props) => {
         total = total+product1.Time_required;
     }
     
-    const [result, setResult] = useState([])
-    const handleClick =(id)=>{
-      setResult(result.concat(id.target.name))
+   
+   const [server, setServer] = useState(0)
+     
+    useEffect(()=>{
+      if(server !==0){
+        localStorage.setItem('local-file', server);
+      }
+    },[server])
+    
+    useEffect(()=>{
+      const storedbd = localStorage.getItem('local-file');
+      if(storedbd){
+        setServer(storedbd)
+      }
+    },[])
 
+    const handleClick1 =(id)=>{
+      setServer(id)
+      console.log(id);
     }
-
-
     return (
         <div>
         <div class="container text-center bg-dark text-white my-5">
-             <div class="row">
+             <div class="row py-3">
                <div class="col">
                <h4>75kb</h4>
                <p>Weight</p>
@@ -36,11 +49,12 @@ const Card = (props) => {
   
   <div>
      <h2>Add a Break</h2>
-    <button className='buttonCard' name='10' onClick={handleClick}>10</button>
-    <button className='buttonCard' name='20' onClick={handleClick}>20</button>
-    <button className='buttonCard' name='30' onClick={handleClick}>30</button>
-    <button className='buttonCard' name='40' onClick={handleClick}>40</button>
-    <button className='buttonCard' name='50' onClick={handleClick}>50</button>
+    <button className='buttonCard' onClick={()=>handleClick1(10)}>10</button>
+    <button className='buttonCard' onClick={()=>handleClick1(20)}>20</button>
+    <button className='buttonCard' onClick={()=>handleClick1(30)}>30</button>
+    <button className='buttonCard' onClick={()=>handleClick1(40)}>40</button>
+    <button className='buttonCard' onClick={()=>handleClick1(50)}>50</button>
+    
   </div>
 
 
@@ -52,7 +66,7 @@ const Card = (props) => {
            </div>
 
            <div className='bg-dark text-white py-3 my-3'>
-            <h3>Break time: {result} Seconds</h3>
+            <h3>Break time: {server} Seconds</h3>
             {/* <p>{id}</p> */}
            </div>
 

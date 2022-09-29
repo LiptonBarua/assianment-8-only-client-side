@@ -21,7 +21,7 @@ const Player = () => {
     return (
         <div>
         <div className="row">
-          <div className="col-12 col-lg-8 pt-5 banner-part">
+          <div className="col-12 col-lg-9 pt-5 banner-part">
             <div className='header-container container'>
               <img src={logo} alt="" />
               <h1>Bangladesh Sports Club</h1>
@@ -41,7 +41,7 @@ const Player = () => {
               }
             </div>
           </div>
-          <div className="col-sm-12 col-lg-4 bg-info">
+          <div className="col-sm-12 col-lg-3 bg-info">
               <div className='cart-container'>
                 <div className='bio-data'>
                   <img src={cardImage} alt="" />

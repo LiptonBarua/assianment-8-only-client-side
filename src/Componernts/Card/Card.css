@@ -1,7 +1,7 @@
 .buttonCard {
-    width: 60px;
-    height: 60px;
-    margin: 16px;
+    width: 49px;
+    height: 49px;
+    margin: 11px;
     border-radius: 60%;
     background-color: black;
     color: white;
@@ -16,7 +16,8 @@
     background-color: red;
     color: white;
     font-size: 24px;
-    padding: 10px 139px;
+    padding: 10px 100px;
+    border: none;
 }
 
 .question1 {
@@ -24,5 +25,5 @@
     background-color: red;
     color: white;
     font-size: 18px;
-    padding: 10px 139px;
+    padding: 10px 100px;
 }
