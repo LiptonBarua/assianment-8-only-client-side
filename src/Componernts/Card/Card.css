@@ -1,5 +1,20 @@
-.buttonCard{
-    width: 50px;
-    height: 40px;
+.buttonCard {
+    width: 60px;
+    height: 60px;
     margin: 16px;
+    border-radius: 60%;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.buttonCard:hover{
+    background-color: red;
+}
+
+.question {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    font-size: 24px;
+    padding: 10px 139px;
 }

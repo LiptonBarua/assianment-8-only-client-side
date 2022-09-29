@@ -53,9 +53,13 @@ const Card = (props) => {
             <h3>Break time: {result} Seconds</h3>
            </div>
 
-          <div>
-          <button>Activity Completed</button>
+          <div className='text-center'>
+          <button className='question text-white py-3 my-5'>Activity Completed</button>
           </div>
+
+          <div className='text-center py-3 my-3'>
+            <a className='question' href="Question.html" target="blank">My Question</a>
+           </div>
         </div>
     );
 };
