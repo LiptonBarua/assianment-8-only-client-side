@@ -28,8 +28,8 @@ const Card = (props) => {
              <p>Height</p>
             </div>
            <div class="col">
-            <h4>75kb</h4>
-             <p>Weight</p>
+            <h4>25yrs</h4>
+             <p>Age</p>
           </div>
      </div>
    </div>
@@ -53,6 +53,7 @@ const Card = (props) => {
 
            <div className='bg-dark text-white py-3 my-3'>
             <h3>Break time: {result} Seconds</h3>
+            {/* <p>{id}</p> */}
            </div>
 
           <div className='text-center'>
