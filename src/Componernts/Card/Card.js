@@ -1,5 +1,7 @@
+
 import React, { useEffect, useState } from 'react';
 import './Card.css'
+
 const Card = (props) => {
     const{cart}=props;
     let total =0;
@@ -8,7 +10,7 @@ const Card = (props) => {
         total = total+product1.Time_required;
     }
     
-   
+
    const [server, setServer] = useState(0)
      
     useEffect(()=>{
