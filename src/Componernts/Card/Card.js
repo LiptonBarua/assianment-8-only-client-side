@@ -1,4 +1,5 @@
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import React, { useEffect, useState } from 'react';
 import './Card.css'
 
@@ -10,7 +11,7 @@ const Card = (props) => {
         total = total+product1.Time_required;
     }
     
-
+    const notify = () => toast("Welcome Your My Project !");
    const [server, setServer] = useState(0)
      
     useEffect(()=>{
@@ -71,10 +72,11 @@ const Card = (props) => {
             <h3>Break time: {server} Seconds</h3>
             {/* <p>{id}</p> */}
            </div>
-
-          <div className='text-center'>
-          <button className='question1 text-white py-3 my-5'>Activity Completed</button>
-          </div>
+           
+        <div>
+        <button className='question' onClick={notify}>Activity Completed</button>
+        <ToastContainer />
+      </div>
 
           <div className='text-center py-3 my-3'>
             <a className='question' href="Question.html" target="blank">My Question</a>
